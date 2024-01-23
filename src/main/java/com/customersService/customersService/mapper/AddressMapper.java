@@ -2,8 +2,10 @@ package com.customersService.customersService.mapper;
 
 import org.mapstruct.Mapper;
 
-import com.customersService.customersService.dto.AddressDto;
-import com.customersService.customersService.model.Address;
+import com.dropKart.commonDB.dto.AddressDto;
+import com.dropKart.commonDB.model.Address;
+
+
 
 @Mapper(componentModel = "spring")
 public interface AddressMapper {

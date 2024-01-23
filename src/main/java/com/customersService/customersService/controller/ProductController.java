@@ -18,10 +18,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.customersService.customersService.Repo.ProductRepo;
-import com.customersService.customersService.dto.MessageDto;
-import com.customersService.customersService.model.Product;
-
+import com.dropKart.commonDB.dto.MessageDto;
+import com.dropKart.commonDB.model.Product;
+import com.dropKart.commonDB.repo.ProductRepo;
 
 import lombok.RequiredArgsConstructor;
 

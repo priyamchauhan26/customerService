@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.customersService.customersService.dto.AddressDto;
-import com.customersService.customersService.dto.MessageDto;
 import com.customersService.customersService.service.AddressService;
 import com.customersService.customersService.utils.AddressUtil;
+import com.dropKart.commonDB.dto.AddressDto;
+import com.dropKart.commonDB.dto.MessageDto;
 
 import lombok.RequiredArgsConstructor;
+
+
 
 @RestController
 @RequiredArgsConstructor
