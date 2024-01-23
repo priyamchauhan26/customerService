@@ -13,13 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.customersService.customersService.dto.CustomerDto;
-import com.customersService.customersService.dto.LoginDto;
-import com.customersService.customersService.dto.MessageDto;
-import com.customersService.customersService.model.Customer;
 import com.customersService.customersService.service.CustomerService;
-
+import com.dropKart.commonDB.dto.CustomerDto;
+import com.dropKart.commonDB.dto.LoginDto;
+import com.dropKart.commonDB.dto.MessageDto;
 
 import lombok.RequiredArgsConstructor;
 
@@ -47,6 +44,7 @@ public class CustomerController {
 			} else {
 				custdto = customerService.addcustomer(customerdto);
 				if (custdto != null) {
+					
 					messagedto.setHttpstatus(HttpStatus.OK);
 					messagedto.setStatus(200);
 					messagedto.setMessage("Successfully Registered User");

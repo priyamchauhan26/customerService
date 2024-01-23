@@ -2,8 +2,7 @@ package com.customersService.customersService.service;
 
 import java.util.List;
 
-import com.customersService.customersService.dto.AddressDto;
-
+import com.dropKart.commonDB.dto.AddressDto;
 public interface AddressService {
 
 	AddressDto addAddress(String id, AddressDto addressdto);
